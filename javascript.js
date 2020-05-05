@@ -12,7 +12,6 @@ function traer() {
         .then(data => {
             con.innerHTML =
                 `<img src="${data.results[0].picture.large} " alt="User " id="pp" class="img-fluid mt-0 rounded-circle" height="150px" width="150px">`;
-            console.log(data.results);
             name.innerHTML = `<p class="lead text-center">Mi nombre es:</p>
                             <h2 class="text-center">${data.results[0].name.first} ${data.results[0].name.last}</h2>`;
             email1.innerHTML = `<p class="lead text-center">Mi E-mail es:</p>
